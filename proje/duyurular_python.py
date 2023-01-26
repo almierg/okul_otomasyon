@@ -1,0 +1,160 @@
+from PyQt5 import QtCore, QtGui, QtWidgets
+import webbrowser
+from sinav3 import Ui_MainWindow23
+
+
+class Ui_MainWindow7(object):
+    def takvim(self):
+      webbrowser.open('https://www.pau.edu.tr/oidb/tr/sayfa/akademik-takvim-3', new=2)
+
+    def erasmus(self):
+        webbrowser.open('https://www.ua.gov.tr/anasayfa/icerikler/basvuru-sonuclari/', new=2)
+
+    def festival(self):
+        webbrowser.open('https://festtr.com/sehir/denizli/', new=2)
+
+    def personel(self):
+        webbrowser.open('https://www.pau.edu.tr/personel/tr/haberler', new=2)
+
+    def sinavlar(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_MainWindow23()
+        self.ui.setupUi(self.window)
+        self.window.show()
+
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1041, 691)
+        MainWindow.setMaximumSize(QtCore.QSize(950,600))
+        font = QtGui.QFont()
+        font.setItalic(True)
+        MainWindow.setFont(font)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton.setGeometry(QtCore.QRect(270, 130, 121, 21))
+        self.pushButton.clicked.connect(self.takvim)
+
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setItalic(True)
+        font.setUnderline(False)
+        font.setWeight(75)
+        font.setStrikeOut(False)
+        self.pushButton.setFont(font)
+        self.pushButton.setObjectName("pushButton")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(70, 110, 261, 51))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(70, 180, 441, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_2.setGeometry(QtCore.QRect(520, 190, 121, 21))
+        self.pushButton_2.clicked.connect(self.erasmus)
+
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setItalic(True)
+        font.setUnderline(False)
+        font.setWeight(75)
+        font.setStrikeOut(False)
+        self.pushButton_2.setFont(font)
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(70, 250, 251, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_3.setGeometry(QtCore.QRect(320, 260, 91, 21))
+        self.pushButton_3.clicked.connect(self.festival)
+
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setItalic(True)
+        font.setUnderline(False)
+        font.setWeight(75)
+        font.setStrikeOut(False)
+        self.pushButton_3.setFont(font)
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(70, 310, 231, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_4.setFont(font)
+        self.label_4.setObjectName("label_4")
+        self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_4.setGeometry(QtCore.QRect(300, 320, 101, 21))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setItalic(True)
+        font.setUnderline(False)
+        font.setWeight(75)
+        font.setStrikeOut(False)
+        self.pushButton_4.setFont(font)
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.pushButton_4.clicked.connect(self.personel)
+
+        self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        self.label_5.setGeometry(QtCore.QRect(70,360,231,41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_5.setFont(font)
+        self.label_5.setObjectName("label_5")
+        self.pushButton_5 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_5.setGeometry(QtCore.QRect(310,370,101,21))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setItalic(True)
+        font.setUnderline(False)
+        font.setWeight(75)
+        font.setStrikeOut(False)
+        self.pushButton_5.setFont(font)
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.pushButton_5.clicked.connect(self.sinavlar)
+
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "DUYURULAR"))
+        self.pushButton.setText(_translate("MainWindow", "tıklayınız."))
+        self.label.setText(_translate("MainWindow", "Akademik takvim için "))
+        self.label_2.setText(_translate("MainWindow", "Erasmus sonuçları açıklandı. Daha fazla bilgi için "))
+        self.pushButton_2.setText(_translate("MainWindow", "tıklayınız."))
+        self.label_3.setText(_translate("MainWindow", "Festival takvimi belli oldu "))
+        self.pushButton_3.setText(_translate("MainWindow", "tıklayınız"))
+        self.label_4.setText(_translate("MainWindow", "Personel alımları başladı. "))
+        self.pushButton_4.setText(_translate("MainWindow", "Göz at"))
+        self.label_5.setText(_translate("MainWindow", "Sınav tarihleri açıklandı. "))
+        self.pushButton_5.setText(_translate("MainWindow", "Göz at"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow7()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())

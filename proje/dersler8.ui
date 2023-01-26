@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>957</width>
+    <height>622</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>481</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Ders Adı                      AKTS                 Dönem              Durum</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Edebiyat                         2                    2022-2023            Zorunlu</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Matematik                      2                    2022-2023            Zorunlu</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Görsel Prog.                   5                     2022-2023           Zorunlu</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Veritabanı ||                   5                     2022-2023           Zorunlu</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Nesne Taban.                 3                     2022-2023           Zorunlu</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Çevre Koruma                3                    2022-2023            Seçmeli</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>İş Sağlığı                        3                    2022-2023            Seçmeli</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Medya Okur.                  2                    2022-2023             Seçmeli</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Kalite Güvence              2                    2022-2023             Seçmeli</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>230</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>EKLE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>280</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>SİL</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>310</y>
+      <width>481</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Ders Adı                      AKTS                 Dönem              Durum</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>280</y>
+      <width>461</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>DERSLERİM</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
